@@ -1,8 +1,8 @@
 const THREE = require('../../../libs/three.js');
-import {ThreeJSView} from './ThreeJSObject.js';
+import {ThreeJSObject} from './ThreeJSObject.js';
 import {BOTTLES_COLORS} from '../../enum.js';
 
-export class Hairdresser extends ThreeJSView {
+export class Hairdresser extends ThreeJSObject {
 
     /**
      * @param {Object3D} scene

@@ -1,7 +1,7 @@
 const THREE = require('../../../libs/three.js');
-import {ThreeJSView} from './ThreeJSObject.js';
+import {ThreeJSObject} from './ThreeJSObject.js';
 
-export class Floor extends ThreeJSView {
+export class Floor extends ThreeJSObject {
 
     /**
      * @param {Object3D} scene

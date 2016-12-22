@@ -6,7 +6,7 @@ import {Wall} from './Views/Objects/Wall';
 import {Hairdresser} from './Views/Objects/Hairdresser.js';
 import {Massage} from './Views/Objects/Massage.js';
 import {Chair} from './Views/Objects/Chair.js';
-import {RoundWoman} from './Views/Objects/RoundWoman.js'
+import {Visitor} from './Views/Objects/Visitor.js'
 import {DEFAULT_CLEAR_COLOR} from './enum.js';
 
 export class Game {
@@ -53,7 +53,7 @@ export class Game {
         this.scene.add(this.chair);
 
         setInterval(() => {
-            let woman = new RoundWoman(this.scene, this.camera, this.floor);
+            let woman = new Visitor(this.scene, this.camera, this.floor);
             woman.setTexture('../json/Models/Woman.json').then(() => {
                 woman.setPosition({
                     x: Math.ceil(Math.random() * 10 + 40),

@@ -22,7 +22,7 @@ export class Scene {
     }
 
     /**
-     * @param {ThreeJSView} object
+     * @param {ThreeJSObject} object
      */
     add(object) {
         this.scene.add(object.getObject());

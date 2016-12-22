@@ -1,7 +1,7 @@
 const THREE = require('../../../libs/three.js');
-import {ThreeJSView} from './ThreeJSObject.js';
+import {ThreeJSObject} from './ThreeJSObject.js';
 
-export class RoundWoman extends ThreeJSView {
+export class Visitor extends ThreeJSObject {
 
     /**
      * @param {Object3D} scene
@@ -32,13 +32,13 @@ export class RoundWoman extends ThreeJSView {
             });
         });
     }
-
     turnOnDrag() {
         this.on('mousedown', this.onMouseDown.bind(this));
     }
 
     turnOffDrag() {
-        this.off('mousedown', this.onMouseDown.bind(this));
+
+       this.off('mousedown', this.onMouseDown.bind(this));
     }
 
     onMouseDown() {

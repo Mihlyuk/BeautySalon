@@ -1,6 +1,6 @@
 const THREE = require('../../../libs/three.js');
 
-export class ThreeJSView {
+export class ThreeJSObject {
 
     /**
      * @param {Scene} scene
